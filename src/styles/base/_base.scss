@@ -1,0 +1,66 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: $background-default;
+}
+
+main {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: $background-secundary $color-primary-palete;   /* scroll thumb and track */
+  }
+
+  /* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $background-secundary $color-primary-palete;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $background-secundary;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $color-primary-palete;
+    border-radius: 20px;
+    border: 3px solid $color-primary-palete;
+  }
+
+.MenuItem {
+    color: black;
+  }
+  
+  /* Increase the specificity */
+  .MenuItem.Mui-selected {
+    background-color: $background-secundary !important;
+  }
+
+  .active button{
+      color: yellow;
+  }
+  .active {
+    color: yellow;
+}
+.container-general{
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
