@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
 import { DetailsRecipes } from './DetailsRecipes'
 import { DairyFree } from './DairyFree'
@@ -10,7 +10,7 @@ import { ErrorView } from '../components/ErrorView'
 
 export const Pages = () => {
   return (
-      <BrowserRouter >
+      <HashRouter> 
         <Navbar />       
         <Routes>            
             <Route path='/' exact element={<Home />} />
@@ -20,6 +20,6 @@ export const Pages = () => {
             <Route path='vegan' element={<Vegan />} />
             <Route path='error' element={<ErrorView />} />
          </Routes>
-      </BrowserRouter>
+      </HashRouter>
   )
 }
