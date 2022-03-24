@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
 import { DetailsRecipes } from './DetailsRecipes'
 import { DairyFree } from './DairyFree'
@@ -10,7 +10,7 @@ import { ErrorView } from '../components/ErrorView'
 
 export const Pages = () => {
   return (
-      <HashRouter> 
+      <HashRouter basename="/"> 
         <Navbar />       
         <Routes>            
             <Route path='/' exact element={<Home />} />
