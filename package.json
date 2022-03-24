@@ -19,7 +19,7 @@
     "react-scripts": "5.0.0",
     "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4",
-    "homepage": "http://fervega22.github.io/recipes-project-react/",
+    "homepage": "http://fervega22.github.io/recipes-project-react",
     "name": "recipes-project-react",
     "version": "0.1.0"
   },
@@ -27,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build  && rm -rf docs && mv build docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
