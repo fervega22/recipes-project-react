@@ -2,8 +2,8 @@
 
 - Kitchen Recipes 
 
-This project was created with REACT - hooks 
-API : spoonacular
+This project was created with REACT - hooks - 
+API: spoonacular
 
 
 ## URL 
