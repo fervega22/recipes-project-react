@@ -3,7 +3,10 @@
 - Kitchen Recipes 
 
 This project was created with REACT - hooks - 
-API: spoonacular
+API: spoonacular.
+
+
+Read api to show recipes - Infinite scroll - Hooks - Material UI - Router Dom - Scss
 
 
 ## URL 
